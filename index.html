@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body id="body" ondblclick="colorChange()">
+    <div id="wrap">
+      <div id="myDIV" class="header">
+        <h2 id="header" style="margin:5px,">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Add todo..." />
+        <span onclick="newElement()" class="addBtn">Add</span>
+        <span onclick="toggleDay()" class="addBtn" id="toggleDay"
+          >Today's todo
+        </span>
+      </div>
+      <div class="fixed">
+        <ul id="myUL">
+          <!-- TODO ITEMS COME HERE -->
+        </ul>
+        <ul id="myNextUL" style="display: none">
+          <!-- TODO ITEMS COME HERE -->
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
